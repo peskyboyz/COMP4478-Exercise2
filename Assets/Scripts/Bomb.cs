@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
+    Main main;
     Transform tr;
     // Start is called before the first frame update
     void Start()
     {
         tr = GetComponent<Transform>();
+        main = GameObject.Find("Scripts").GetComponent<Main>();
     }
 
     void FixedUpdate()
@@ -24,6 +26,7 @@ public class Bomb : MonoBehaviour
         {
             Destroy(this.gameObject);
             Destroy(collision.gameObject);
+            main.GameOver = true;
         }
     }
 }
