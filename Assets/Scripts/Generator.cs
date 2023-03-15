@@ -31,11 +31,11 @@ public class Generator : MonoBehaviour
 
             if (chance <= 20)
             {
-                Instantiate(gm[1], new Vector3(pos_x, 30.0f, 0.1f), new Quaternion(0, 0, 0, 0));
+                Instantiate(gm[1], new Vector3(pos_x, 35.0f, 0.1f), new Quaternion(0, 0, 0, 0));
             }
             else
             {
-                Instantiate(gm[0], new Vector3(pos_x, 30.0f, 0.1f), new Quaternion(0, 0, 0, 0));
+                Instantiate(gm[0], new Vector3(pos_x, 35.0f, 0.1f), new Quaternion(0, 0, 0, 0));
             }
             timer = 0.7f;
         }

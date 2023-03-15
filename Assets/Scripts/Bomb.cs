@@ -15,7 +15,7 @@ public class Bomb : MonoBehaviour
 
     void FixedUpdate()
     {
-        tr.position -= new Vector3(0f, 0.5f, 0f);
+        //tr.position -= new Vector3(0f, 0.5f, 0f);
 
         if (tr.position.y < -20f) Destroy(this.gameObject);
 
