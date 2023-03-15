@@ -11,13 +11,14 @@ public class Main : MonoBehaviour
     public bool GameOver;
     public Transform title;
     public TextMeshProUGUI Scoreboard;
+    public Generator generator;
     // Start is called before the first frame update
     void Start()
     {
         score = 0;
         GameOver = false;
         Scoreboard.text = "0";
-
+        generator = GameObject.Find("Scripts").GetComponent<Generator>();
     }
 
     // Update is called once per frame
@@ -26,6 +27,7 @@ public class Main : MonoBehaviour
         if (GameOver == true)
         {
             title.localPosition = new Vector3(0f, 0f, 0f);
+            generator.generate = false;
             GameOver = false;
         }
     }

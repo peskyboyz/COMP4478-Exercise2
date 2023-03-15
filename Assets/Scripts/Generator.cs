@@ -7,12 +7,14 @@ using Random = UnityEngine.Random;
 public class Generator : MonoBehaviour
 {
     Main main;
-    float timer = 1;
+    public float timer = 1;
     public GameObject[] gm;
+    public bool generate;
+
     // Start is called before the first frame update
     void Start()
     {
-        main = GameObject.Find("Scripts").GetComponent<Main>();
+        generate = true;
     }
 
     // Update is called once per frame
@@ -22,18 +24,18 @@ public class Generator : MonoBehaviour
         {
             timer -= Time.deltaTime;
         }
-        else if (timer <= 0 && main.GameOver == false)
+        else if (timer <= 0 && generate)
         {
             int chance = Random.Range(1, 101);
             float pos_x =  Random.Range(-35.0f, 35.0f);
 
             if (chance <= 20)
             {
-                Instantiate(gm[1], new Vector3(pos_x, 20.0f, 0.1f), new Quaternion(0, 0, 0, 0));
+                Instantiate(gm[1], new Vector3(pos_x, 30.0f, 0.1f), new Quaternion(0, 0, 0, 0));
             }
             else
             {
-                Instantiate(gm[0], new Vector3(pos_x, 20.0f, 0.1f), new Quaternion(0, 0, 0, 0));
+                Instantiate(gm[0], new Vector3(pos_x, 30.0f, 0.1f), new Quaternion(0, 0, 0, 0));
             }
             timer = 0.7f;
         }
