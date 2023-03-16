@@ -13,6 +13,6 @@ Use Escape to exit the game
 
 Music by Rizwan Ashraf (https://assetstore.unity.com/packages/audio/music/free-music-tracks-for-games-156413)
 
-Water effects by LowlyPoly (https://assetstore.unity.com/packages/2d/textures-materials/water/stylize-water-texture-153577)
+Water materials by LowlyPoly (https://assetstore.unity.com/packages/2d/textures-materials/water/stylize-water-texture-153577)
 
 Explosion art by PekkeDev (https://www.youtube.com/watch?v=P7wlkABjNDk)
