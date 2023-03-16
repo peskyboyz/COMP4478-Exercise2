@@ -30,6 +30,10 @@ public class Main : MonoBehaviour
             generator.generate = false;
             GameOver = false;
         }
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
     public void ScoreAdd()
     {
