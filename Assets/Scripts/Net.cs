@@ -14,11 +14,11 @@ public class Net : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey("right") == true)
+        if (Input.GetKey("right") || Input.GetKey(KeyCode.D))
         {
             if (tr.position.x < 35f) tr.position += new Vector3(1.25f, 0f, 0f);
         }
-        if (Input.GetKey("left") == true)
+        if (Input.GetKey("left") || Input.GetKey(KeyCode.A))
         {
             if (tr.position.x > -35f) tr.position += new Vector3(-1.25f, 0f, 0f);
         }
