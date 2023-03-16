@@ -1,9 +1,12 @@
 # COMP4478-Exercise2
 The COMP-4478 Exercise 2 to make a fish catching game while dodging bombs.
 
+The final game .exe file is the CompletedGame folder.
+
 # Controls
 
 Use Left and Right arrows or A and D to move the basket
+
 Use Escape to exit the game
 
 # Credits
